@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="main_div">
+    <div class="music_container">
+      <h2 id="title">Song 1</h2>
+      <h1 id="artist">Artist 1</h1>
+      <div class="img_container">
+        <img class="img" src="images/music1.jpg" alt="">
+      </div>
+      <audio src="music/music1.mp3"></audio>
+
+      <!-- ********Progres Bar ****** -->
+      <div class="prog_bar_container" id="prog_container">
+        <div class="duration_meter">
+          <div id="curr_time">0:00</div>
+          <div id="duration">3:00</div>
+        </div>
+        <div class="progress_div" id="progress_div">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <!-- ------controls ****** -->
+      <div class="music_controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main_button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
